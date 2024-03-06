@@ -29,7 +29,7 @@ const App = () => {
   };
 
   useEffect(() => {
-    searchMovie("Spiderman");
+    searchMovie("All");
   }, []);
 
   return (
@@ -47,7 +47,7 @@ const App = () => {
       </div>
 
       {movies?.length > 0 ? (
-        <div className="contianer">
+        <div className="container">
           {movies.map((movie) => (
             <MovieCard movie={movie} />
           ))}
